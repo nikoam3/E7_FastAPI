@@ -42,6 +42,6 @@ async def get_repair_bay():
 
 @app.post("/teapot")
 async def teapot():
-    return Response(status_code=418, content="I'm a teapot", media_type="text/plain")
+    return Response(status_code=418)
 
 #PARA EJECUTAR SCRIPT MODO LOCAL uvicorn main:app --host 0.0.0.0 --port 8000
